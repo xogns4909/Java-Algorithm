@@ -15,26 +15,3 @@
 |d|	budget|result|
 |------|---|---|
 |[1,3,2,5,4]|9|3|
-|[2,2,3,3,]10|4|
-## 코드
-```javascript
-function solution(d, budget) {
-    d.sort((a,b) => a-b )
-    let cnt = 0;
-    for(let i of d){
-        if(budget < i){
-            break
-        } 
-        else{
-            budget -= i
-            cnt += 1
-        }
-    }
-    return cnt
-}
-``` 
-
-<br>
-
-# 3진법 뒤집기
-- 자연수 n이 매개변수로 주어집니다. n을 3진법 상에서 앞뒤로 뒤집은 후, 이를 다시 10진법으로 표현한 수를 return 하도록 solution 함수를 완성해주세요.
